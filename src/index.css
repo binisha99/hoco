@@ -12,9 +12,58 @@ body {
 body {
   background-color: #edeae4;
 }
+section {
+  padding: 40px;
+}
 .center-items {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
+}
+
+.strike-bg {
+  position: relative;
+}
+
+.strike-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/icons/who.png');
+  opacity: 0.2;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.strike-bg > * {
+  position: relative;
+  z-index: 1;
+}
+.about-bg {
+  position: relative;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/icons/who.png');
+  background-color: white;
+  opacity: 0.6;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.abouts-bg > * {
+  position: relative;
+  z-index: 1;
 }

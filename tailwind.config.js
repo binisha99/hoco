@@ -20,11 +20,14 @@ export default {
         primary: {
           header_cyan: '#A7FDEB',
           item_right_dark: '#087782',
-          item_right_middle: '31abb3',
+          item_right_middle: '#31abb3',
           item_right_light: '#50d2d8',
-          item_mid_dark: '097882',
-          item_mid_middle: '2fa8b0',
-          item_mid_light: '53d6dc',
+          item_mid_dark: '#097882',
+          item_mid_middle: '#2fa8b0',
+          item_mid_light: '#53d6dc',
+        },
+        button: {
+          button_gray: '#DEDAD4',
         },
       },
     },

@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       <header className=" bg-cyan-200">
-        <div className="flex items-center p-4 max-h-16  justify-normal sm:justify-between">
+        <div className="flex items-center container max-h-16  justify-normal sm:justify-between">
           <div
             className="flex sm:hidden transition-opacity ease-in-out duration-300 "
             onClick={handleHamburgerMenu}
