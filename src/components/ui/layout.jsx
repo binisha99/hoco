@@ -1,10 +1,12 @@
 import Header from './header/Header';
-import Footer from './footer/Footer';
+// import Footer from './footer/Footer';
+import Main from './Main/Main';
 const Layout = () => {
   return (
     <>
       <Header />
-      <Footer />
+      <Main />
+      {/* <Footer /> */}
     </>
   );
 };

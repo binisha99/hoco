@@ -4,9 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+body {
   font-family: 'Inter';
+  min-height: 100vh;
 }
 body {
-  /* background-color: #edeae4; */
+  background-color: #edeae4;
+}
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
