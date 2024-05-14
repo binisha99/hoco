@@ -6,14 +6,14 @@ export default function AboutUS() {
     <section className="about-bg non-container ">
       <div className="bg-[#edeae4]  min-h-[318px] flex items-center justify-center relative overflow-hidden">
         <h3 className="text-[54px] font-bold ?">Who are we</h3>
-        <figure>
+        <figure className="hidden md:flex">
           <img
             src={earbud}
             alt="earbud right corner"
             className="absolute -left-24 -bottom-32"
           />
         </figure>
-        <figure>
+        <figure className="hidden md:flex">
           <img
             src={earbudflip}
             alt="earbud right corner"

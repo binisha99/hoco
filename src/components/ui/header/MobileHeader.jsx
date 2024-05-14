@@ -12,7 +12,7 @@ export default function MobileHeader() {
   ];
 
   return (
-    <div className="bg-cyan-200 absolute top-16 left-0 bg-primary-dark_violet py-10 px-10 w-1/2 border border-t-black">
+    <div className="bg-cyan-200 absolute top-16 left-0 bg-primary-dark_violet py-10 px-10 w-1/2 border border-t-black z-40">
       <ul className="flex gap-8  flex-col h-full">
         {hamburgerHeader.map((item, index) => (
           <li key={index} className="text-base">
