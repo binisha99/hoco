@@ -19,32 +19,30 @@ export default function Header() {
   return (
     <>
       <header className=" bg-cyan-200">
-        <div className="flex items-center container max-h-16  justify-normal sm:justify-between">
-          <div
-            className="flex sm:hidden transition-opacity ease-in-out duration-300 "
-            onClick={handleHamburgerMenu}
-          >
-            {hamburgerMenu ? <IoMdClose /> : <RxHamburgerMenu />}
+        <div className="flex items-center max-h-16  justify-between px-5 relative">
+          <div className="flex items-center justify-between gap-1">
+            <div
+              className="flex sm:hidden transition-opacity ease-in-out duration-300 "
+              onClick={handleHamburgerMenu}
+            >
+              {hamburgerMenu ? <IoMdClose /> : <RxHamburgerMenu />}
+            </div>
+            {hamburgerMenu ? <MobileHeader /> : ''}
+            <div>
+              <figure>
+                <img src={logo} alt="Logo of hoko" className="h-16 sm:h-auto" />
+              </figure>
+            </div>
           </div>
-          {hamburgerMenu ? <MobileHeader /> : ''}
-          <div>
+          <div className="flex sm:hidden items-center gap-2">
             <figure>
-              <img src={logo} alt="Logo of hoko" className="h-16 sm:h-auto" />
+              <IoSearch className="h-5 w-5" />
+            </figure>
+            <figure>
+              <img src={cart} alt="" className="h-5 w-5" />
             </figure>
           </div>
 
-          {hamburgerMenu ? (
-            ''
-          ) : (
-            <div className="flex sm:hidden items-center gap-2">
-              <figure>
-                <IoSearch className="h-5 w-5" />
-              </figure>
-              <figure>
-                <img src={cart} alt="" className="h-5 w-5" />
-              </figure>
-            </div>
-          )}
           <nav className="hidden sm:flex">
             <ul className="flex gap-12 items-center">
               <li className="center-items ">
