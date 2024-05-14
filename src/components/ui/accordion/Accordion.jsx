@@ -10,10 +10,16 @@ export default function Accordion({ title, answer }) {
   };
 
   return (
-    <div className="mt-3">
+    <div className="mt-3 border-2 border-b-black p-3">
       <button className="flex justify-between w-full" onClick={toggleAccordion}>
-        <span>{title}</span>
-        <span>{accordionOpen ? <LuMinus /> : <AiOutlinePlus />}</span>
+        <span className="font-semibold text-lg md:text-2xl">{title}</span>
+        <span>
+          {accordionOpen ? (
+            <LuMinus className="h-6 w-4" />
+          ) : (
+            <AiOutlinePlus className="h-6 w-6" />
+          )}
+        </span>
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-sm ${
